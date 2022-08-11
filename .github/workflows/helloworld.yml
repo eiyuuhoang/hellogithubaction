@@ -1,0 +1,13 @@
+# Workflow create a job that print "Hello World" on Screen
+name: HelloWorld
+on:
+  push:
+    branches: ["main"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Hello World
+        run: echo Hello World!
+
