@@ -1,0 +1,13 @@
+name: HelloWorld3
+
+# Define branches
+on:
+  push:
+    branches: ["main"]
+# Define a build job
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Hello World 3
+        run: echo "Hello World 3"
